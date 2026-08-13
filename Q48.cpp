@@ -19,7 +19,7 @@ class Solution
             }
         }
 
-        //rotate the matrix by
+        //rotate the matrix 
         for(int i = 0; i < n; i++) 
         {
             int left = 0;
@@ -35,6 +35,8 @@ class Solution
         }
     }
 };
+
+
 
     int main() 
     {
