@@ -1,3 +1,8 @@
+#include<iostream>
+#include<vector>
+#include<unordered_set>
+using namespace std;
+
 class Solution {
 public:
     unordered_set<string> ans;
@@ -54,3 +59,16 @@ public:
         return vector<string>(ans.begin(), ans.end());
     }
 };
+
+int main() {
+    Solution solution;
+    string s = "()())()";
+    vector<string> result = solution.removeInvalidParentheses(s);
+
+    cout << "Valid combinations of parentheses:" << endl;
+    for (const string &str : result) {
+        cout << str << endl;
+    }
+
+    return 0;
+}
